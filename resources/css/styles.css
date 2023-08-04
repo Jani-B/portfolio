@@ -134,41 +134,41 @@ main {
 .project {
     grid-column: span 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 0.2rem;
     padding: 1rem;
     /*background-color: beige;*/
-    max-height: 15rem;
     /*position: relative;*/
     /*border: 1px solid red;*/
-    overflow: hidden;
 }
 
 .project h3 {
     padding-bottom: 0.6rem;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 1;
     text-align: center;
 }
 
 .project img {
     grid-column: 1 / span 1;
     /*grid-row: 2 / span 1;*/
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
     /*border: 1px solid red;*/
     margin-bottom: 0.6rem;
-    overflow: hidden;
+    margin: auto;
 }
 
 .project p {
     display: block;
     text-overflow: ellipsis;
-    width: 100%;
-    grid-column: 2 / span 1;
+    width: 85%;
+    grid-column: 1 / span 1;
     /*grid-row: 2 / span 1;*/
     /*position: absolute;*/
     /*border: 1px solid red;*/
-    margin-bottom: 0.6rem;
+    margin: auto;
+    text-align: justify;
+
 }
 
 
@@ -178,4 +178,14 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-}
+
+
+    .project-header {
+        grid-column: 1 / span 2;
+    }
+
+
+
+    }
+
+
