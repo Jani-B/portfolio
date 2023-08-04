@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    Font-size: 16px;
+    font-family: helvetica;
+    /*border: 1px solid red;*/
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+/*** HEADER ***/
+
+header {
+
+    color:aliceblue;
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.tab {
+    background-color: #F2A97E;
+    /*border: 1px solid red;*/
+    /*padding-bottom: 0.6rem;*/
+}
+
+.logo {
+    grid-column: 1 / span 3;
+
+
+}
+
+.portfolio {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+    font-family: Roboto;
+    letter-spacing: 0.5rem;
+    padding-bottom: 0.6rem;
+  
+}
+
+.main-picture {
+    height: 10rem;
+    background-color:rgb(249, 255, 255);
+    grid-column: 1 / span 5;
+    /*position: relative;*/
+}
+
+.main-picture h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: #F2A97E;;
+    font-size: 1.7rem;
+    font-family: Roboto;
+    letter-spacing: 0.5rem;
+}
+/*** NAVBAR ***/
+
+nav {
+    grid-column: 4 / span 2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    justify-self: center;
+
+
+}
+
+nav li {
+    margin: auto;
+    float: right;
+    padding: 0.3rem;
+    justify-content: center;
+    
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.6rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    justify-self: center;
+}
+
+nav li:hover {
+    background-color: #d6804e;
+}
+
+
+/*** MAIN ***/
+
+main {
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.project-header {
+    font-size: 1.3rem;
+    color: black;
+    grid-column: 1 / span 5;
+
+}
+
+.project-header h2 {
+    padding-left: 5%;
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: Roboto;
+
+}
