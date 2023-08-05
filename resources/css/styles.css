@@ -52,7 +52,10 @@ header {
     text-decoration: none;
     font-family: Roboto;
     color: white;
-    font-size: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: 0.5rem;
+    display: block;
+    padding-bottom: 0.1rem;
 }
 
 .main-picture {
@@ -79,6 +82,7 @@ nav {
     grid-column: 4 / span 2;
     display: flex;
     background-color: #f09967;
+
     
    
 }
@@ -90,7 +94,6 @@ nav ul {
     overflow: hidden;
     text-align: center;
     justify-self: center;
-    
 
 
 
@@ -222,8 +225,7 @@ footer {
     min-height: 2rem;
     background-color: #f09967;
     grid-column: span 4;
-    max-height: 4rem;
-    align-self: end;
+
  
 
 }
