@@ -1,8 +1,9 @@
-function myFunction () {
+function menu() {
     let x = document.getElementById('myTopnav');
-    if (x.className === 'navigation') {
-        x.className += ' responsive';
+    if (x.className === 'navigation tab') {
+        x.className += ' responsive tab';
     } else {
-        x.className = 'navigation';
+        x.className = 'navigation tab';
     }
-}
+};
+

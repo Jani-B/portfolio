@@ -67,6 +67,7 @@ header {
 nav {
     grid-column: 4 / span 2;
     display: flex;
+    background-color: #f09967;
     
    
 }
@@ -103,7 +104,7 @@ nav li a {
     justify-self: center;
 }
 
-nav li:hover {
+.navigation li:hover {
     background-color: #d6804e;
 }
 
@@ -205,6 +206,7 @@ main {
     }
     nav {
         grid-column: 3 / span 3;
+        background-color: #f09967;
     }
 
     .portfolio {
@@ -255,20 +257,29 @@ main {
 
     .navigation li.normal {
         display: none;
+        
 
     } 
-    .navigation a.icon {
+    .navigation li.icon {
         display: block;
         position: absolute;
         right: 0;
         top: 0;
+        width: 10%;
+        padding-bottom: 0;
     }
     
     .navigation.responsive li.normal {
         display: block;
+        background-color: #f09967;
 
     } 
-    .navigation.responsive li a.icon {
+
+    .navigation.responsive li:hover {
+        background-color: #d6804e;
+    }
+
+    .navigation.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
