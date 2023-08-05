@@ -64,8 +64,11 @@ header {
 .main-picture h1 {
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 2rem;
     color: #f09967;
-    font-size: 1.7rem;
+    /*background-color: #ebd48a;*/
+    padding: 1rem;
+    font-size: 1.9rem;
     font-family: Roboto;
     letter-spacing: 0.5rem;
 }
@@ -214,6 +217,12 @@ main {
 
 }
 
+footer {
+    min-height: 2rem;
+    background-color: #f09967;
+    grid-column: span 4;
+}
+
 
 @media only screen and (max-width: 1000px) {
 
@@ -239,6 +248,7 @@ main {
     .portfolio {
         font-size: 1.2rem;
     }
+
 }
 
 @media only screen and (max-width: 700px) {
