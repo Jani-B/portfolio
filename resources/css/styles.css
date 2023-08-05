@@ -107,6 +107,9 @@ nav li:hover {
     background-color: #d6804e;
 }
 
+nav .icon {
+    display: none;
+}
 
 /*** MAIN ***/
 
@@ -179,6 +182,7 @@ main {
     /*border: 1px solid red;*/
     margin: auto;
     text-align: justify;
+    padding-top: 1rem;
 
 }
 
@@ -195,8 +199,87 @@ main {
         grid-column: 1 / span 2;
     }
 
+    .logo {
+    grid-column: 1 / span 2;
 
+    }
+    nav {
+        grid-column: 3 / span 3;
+    }
+
+    .portfolio {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        margin: 0 10%;
+    }
+    
+    .project-header {
+        grid-column: 1 / span 1;
+    }
+
+    .logo {
+        grid-column: 1 / span 5;
+        text-align: center;
+    }
+    nav {
+        grid-column: 1 / span 5;
+        display: inline-flex;
+        text-align: right;
+        align-content: right;
 
     }
 
+    nav ul {
+        display: block;
+        width: 100%;
+        text-align: right;
 
+    }
+
+    nav li {
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
+
+
+    .navigation li.normal {
+        display: none;
+
+    } 
+    .navigation a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navigation.responsive li.normal {
+        display: block;
+
+    } 
+    .navigation.responsive li a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+        /*
+    .navigation.responsive li.normal {
+        float: none;
+        display: block;
+        text-align: left;
+        position: relative;
+        z-index: 5;
+    } */
+
+}
