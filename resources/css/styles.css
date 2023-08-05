@@ -8,6 +8,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 100vh;
 
 }
 
@@ -221,6 +222,10 @@ footer {
     min-height: 2rem;
     background-color: #f09967;
     grid-column: span 4;
+    max-height: 4rem;
+    align-self: end;
+ 
+
 }
 
 
